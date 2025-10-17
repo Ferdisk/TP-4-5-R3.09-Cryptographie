@@ -10,6 +10,31 @@ class Couleurs:
     REINITIALISER = '\033[0m'  # Identique à FIN
 
 
+def affiche_menu():
+    print(f"Menu principal"
+          "\n1. Exercice 1 : "
+          "\n2. Exercice 2 "
+          "\n3. Exercice 3 :"
+          "\n4. Exercice 4 :"
+          "\n5. Quitter le programme")
+
+
+def traitement_menu(mdp: str, tag: str) -> None:
+    affiche_menu()
+    choix: int = int(input())
+    match choix:
+        case 1:   # à compléter
+            pass
+        case 2:
+            pass  # à compléter
+        case 3:
+            pass  # à compléter
+        case 4:
+            pass  # à compléter
+        case _:
+            print("Vous avez quitté le menu")
+
+
 def verifchaine(chaine: str) -> bool:
     """Renvoie False si la chaîne contient au moins un caractère invisible."""
     CARACTERES_INVISIBLES = (
